@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Image" />
+        <module name="tp5" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tp5" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

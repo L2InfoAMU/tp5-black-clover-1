@@ -6,11 +6,11 @@ import util.Matrices;
 public abstract class RasterImage implements Image{
     public int height,width;
 
-    void setHeight(int height) {
+    protected void setHeight(int height) {
         this.height = height;
     }
 
-    public void setWidth(int width) {
+    protected void setWidth(int width) {
         this.width = width;
     }
 
