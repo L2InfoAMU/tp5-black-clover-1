@@ -24,7 +24,7 @@ public class Display implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        imageFactory = new LogoLISFactory();
+        imageFactory = new Shapes();
 
         this.image = imageFactory.makeImage();
 
