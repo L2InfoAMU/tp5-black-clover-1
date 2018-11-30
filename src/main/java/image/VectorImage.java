@@ -4,8 +4,7 @@ import javafx.scene.paint.Color;
 
 import java.util.List;
 
-public class VectorImage implements Image{
-    public int width,height;
+public class VectorImage extends ReduceDuplicate{
     public List<Shape> shapes;
 
     public VectorImage(List<Shape> shapes, int width, int height){
@@ -21,23 +20,5 @@ public class VectorImage implements Image{
                 return shapes.get(i).getColor();
         }
         return Color.WHITE;
-    }
-
-    @Override
-    public int getHeight() {
-        return this.height;
-    }
-
-    @Override
-    public int getWidth() {
-        return this.width;
-    }
-
-    protected void setWidth(int width){
-        this.width = width;
-    }
-
-    protected void setHeight(int height){
-        this.height = height;
     }
 }

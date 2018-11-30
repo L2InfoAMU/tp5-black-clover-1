@@ -3,24 +3,7 @@ package image;
 import javafx.scene.paint.Color;
 import util.Matrices;
 
-public abstract class RasterImage implements Image{
-    public int height,width;
-
-    protected void setHeight(int height) {
-        this.height = height;
-    }
-
-    protected void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getWidth() {
-        return this.width;
-    }
-
-    public int getHeight() {
-        return this.height;
-    }
+public abstract class RasterImage extends ReduceDuplicate{
 
     abstract void createRepresentation();
 
