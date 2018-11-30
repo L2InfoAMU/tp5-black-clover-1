@@ -13,6 +13,10 @@ public class Shapes implements ImageFactory{
         list.add(new Cercle(150, 100, 50, Color.ORANGE));
         list.add(new Rectangle(0,0, 200, 50, Color.AQUA));
         list.add(new Rectangle(201,0, 200, 50, Color.BLUE));
+        Point A = new Point(450,0);
+        Point B =new Point(400,200);
+        Point C =new Point(600,200);
+        list.add(new Triangle(A,B,C, Color.GREEN));
 
         return new VectorImage(list, 600, 300);
     }
